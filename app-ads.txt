@@ -1,2 +1,24 @@
-google.com, pub-8001492105518772, DIRECT, f08c47fec0942fa0
+# app-ads.txt — destekdrk.github.io
+# IAB Tech Lab standardı. Doğrulama, taranacak alan adını MAĞAZA LİSTESİNDEN
+# okur (Play Console > Store listing > Web sitesi / App Store Connect >
+# Marketing URL). DRK Sistem uygulamalarının birincil alan adı drksistem.com'dur;
+# bu dosya yedek/ikincil kopyadır ve onunla tutarlı tutulmalıdır.
+#
+# ════════════════════════════════════════════════════════════════════════════
+# 2026-08-25 — ADMOB SATIRI KALDIRILDI
+# Kaldırılan:  google.com, pub-8001492105518772, DIRECT, f08c47fec0942fa0
+# O AdMob yayıncı hesabı geçersiz trafik nedeniyle KALICI olarak kapatıldı
+# (itiraz reddedildi). Satır artık hiçbir şey yetkilendirmiyordu.
+# Oblok'un reklamları 2026-08-24'ten beri Unity LevelPlay üzerinden sunuluyor.
+#
+# ⚠️ Aşağıdaki pub-4714128809002115 satırı DOKUNULMADAN bırakıldı: hangi hesaba
+# ait olduğu doğrulanamadı. Sahibine aitse ve o hesap da kapalıysa silinmeli;
+# kullanılmıyorsa da zararsızdır (kapalı hesap zaten satış yapamaz).
+# ════════════════════════════════════════════════════════════════════════════
+#
+# ironSource Publisher ID: 678113
+# (platform.ironsrc.com > profil avatarı > Account > API sekmesi)
+
+OWNERDOMAIN=destekdrk.github.io
+ironsrc.com, 678113, DIRECT
 google.com, pub-4714128809002115, DIRECT, f08c47fec0942fa0
