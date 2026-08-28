@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oblok — Privacy Policy</title>
+<link rel="canonical" href="https://drksistem.com/oblok/gizlilik">
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -15,155 +16,266 @@
     body { color: #ECE8FF; background: #0C0A1C; }
     a { color: #B79BFF; }
     code { background: #211d3a; }
+    .ozet, .kutu { background: rgba(183,155,255,.10); }
+    th { background: rgba(183,155,255,.10); }
   }
   h1 { font-size: 1.7rem; margin-bottom: 4px; }
   h2 { font-size: 1.18rem; margin-top: 32px; border-bottom: 1px solid rgba(128,128,128,.25); padding-bottom: 6px; }
+  h3 { font-size: 1.02rem; margin: 26px 0 8px; }
+  .uyg-etiket { text-transform: uppercase; letter-spacing: .16em; font-size: .74rem; color: #888; margin: 0 0 6px; }
   .meta { color: #888; font-size: .9rem; margin-bottom: 24px; }
   a { color: #5b3df2; }
   code { background: #f0eef9; padding: 1px 6px; border-radius: 5px; font-size: .92em; }
   ul { padding-left: 22px; }
   li { margin: 4px 0; }
-  .tldr { background: rgba(128,128,128,.10); border-radius: 12px; padding: 14px 18px; margin: 20px 0; }
+  .ozet, .kutu { background: rgba(128,128,128,.10); border-radius: 12px; padding: 14px 18px; margin: 20px 0; }
+  .kutu h3 { margin-top: 0; }
+  .kutu p:last-child { margin-bottom: 0; }
+  .tablo-sar { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .94rem; margin: 12px 0; }
+  th, td { border: 1px solid rgba(128,128,128,.30); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(128,128,128,.10); }
   footer { margin-top: 40px; color: #888; font-size: .85rem; }
 </style>
 </head>
 <body>
+  <p class="uyg-etiket">Oblok</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    Last updated: 28 August 2026 · Applies from app version 1.3.6 (build 36) · Developer: DRK STUDIO · Contact:
+    <a href="mailto:destek@drksistem.com">destek@drksistem.com</a>
+  </p>
 
-<h1>Privacy Policy — Oblok</h1>
-<p class="meta">Last updated: 13 July 2026 · Developer: DRK STUDIO · Contact:
-  <a href="mailto:destek@drksistem.com">destek@drksistem.com</a></p>
+  <p>This Privacy Policy explains how <strong>DRK STUDIO</strong> ("we", "us") handles
+  information in the mobile game <strong>Oblok</strong> (the "Game", package id
+  <code>ai.drksistem.oblok</code>), available on Google Play and the Apple App Store.</p>
 
-<p>This Privacy Policy explains how <strong>DRK STUDIO</strong> ("we", "us") handles
-information in the mobile game <strong>Oblok</strong> (the "Game", package id
-<code>ai.drksistem.oblok</code>), available on Google Play and the Apple App Store.</p>
+  <div class="ozet">
+    <strong>In short:</strong> Oblok has no player accounts and no game backend of its own —
+    your progress is stored on your device. Advertising is served through
+    <strong>Unity LevelPlay (ironSource)</strong> mediation and its partner ad networks;
+    measurement uses <strong>Firebase Analytics and Crashlytics</strong>. Ad personalisation
+    is optional: declining does not remove ads, it only makes them non-personalised, and you
+    can change the choice at any time under <strong>Settings → Privacy</strong>. Optional
+    purchases are processed by Google Play or Apple.
+  </div>
 
-<div class="tldr">
-<strong>In short:</strong> Oblok has no player accounts and no game backend of its own.
-Game progress is stored on your device. The Game does, however, use Google AdMob,
-Google User Messaging Platform, and Firebase Analytics. These services process advertising,
-consent, device, usage, and gameplay-event data as described below. Optional purchases are
-processed by Google Play or Apple.
-</div>
+  <div class="kutu">
+    <h3>What changed in this version</h3>
+    <p>Until August 2026 the Game served ads through <strong>Google AdMob</strong> and asked
+    for consent through <strong>Google's User Messaging Platform (UMP)</strong>. Both have been
+    removed. The <code>google_mobile_ads</code> component is no longer part of the Game.
+    Advertising now runs on Unity LevelPlay mediation, and the personalisation choice is
+    collected by an in-game dialog described in section 1(e).</p>
+  </div>
 
-<h2>1. Information We Handle</h2>
+  <h2>1. Information We Handle</h2>
 
-<p><strong>(a) Information you provide directly.</strong> The Game does not require sign-up,
-login, name, email address, or a player account. If you contact support by email, we receive
-the address and information included in that message and use it to answer your request.</p>
+  <p><strong>(a) Information you provide directly.</strong> The Game does not require sign-up,
+  login, name, email address, or a player account. If you contact support by email, we receive
+  the address and information included in that message and use it to answer your request.</p>
 
-<p><strong>(b) Data stored locally on your device.</strong> The Game stores level progress,
-scores, stars, streak and daily-reward state, booster inventory, settings, advertising
-frequency state, and gameplay counters in on-device storage. This local save data is not
-uploaded as a save file and is removed if you clear the Game's data or uninstall it. Some
-limited gameplay values are also included in Firebase Analytics events as explained below.</p>
+  <p><strong>(b) Data stored locally on your device.</strong> The Game stores level progress,
+  stars, daily-reward and streak state, booster inventory, block collection, settings, your ad
+  personalisation choice, and advertising frequency counters in on-device storage. This local
+  save data is not uploaded as a save file and is removed if you clear the Game's data or
+  uninstall it. Some limited gameplay values are also included in analytics events as
+  explained in section 1(f).</p>
 
-<p><strong>(c) Data processed by Google AdMob.</strong> The Game uses AdMob for optional
-rewarded ads and for interstitial ads shown at eligible level-completion breaks. Depending on
-your region, consent choices, device settings, and Google's configuration, AdMob may process
-advertising identifiers, IP address, approximate location derived from IP, device and app
-information, ad requests, ad impressions, interactions, diagnostics, and impression-level
-revenue data. Ads may be personalized or non-personalized according to the choices and legal
-requirements that apply to you.</p>
+  <p><strong>(c) Advertising through Unity LevelPlay.</strong> The Game uses
+  <strong>Unity LevelPlay (ironSource)</strong> as its ad mediation platform. Two ad formats
+  are used: <em>rewarded</em> ads, which are always voluntary and only start when you choose
+  them, and <em>interstitial</em> ads, which appear only after a level you have won, never
+  during play, never in levels 1–10 of the Adventure Path, and at most 8 times per calendar
+  day. Rewarded ads are limited to 25 views per calendar day as an anti-abuse safeguard.</p>
 
-<p><strong>(d) Consent and privacy choices.</strong> The Game uses Google's User Messaging
-Platform (UMP) to request updated consent information, display a consent form when required,
-determine whether advertising requests are allowed, and make privacy options available again
-when required. Google processes the consent and privacy signals needed to provide this service.</p>
+  <p>Depending on your region, your personalisation choice, your device settings, and the
+  networks that respond to a given ad request, LevelPlay and the partner networks listed in
+  section 5 may process: an advertising identifier (on Android the Google Advertising ID or
+  App Set ID; on iOS the IDFA only if you allow tracking), IP address and a coarse location
+  derived from it, device and app information such as model, operating system version, app
+  version, language and country, ad requests, impressions, interactions, viewability and
+  diagnostic signals, and impression-level revenue data.</p>
 
-<p><strong>(e) Firebase Analytics.</strong> The Game uses Google Firebase Analytics to
-understand stability, retention, level balance, and advertising performance. Analytics data
-may include an app-instance identifier, device/app information, language, session and screen
-events, level number and objective, wins and losses, score, moves, play duration, board-fill or
-progress percentages, booster use, daily-reward activity, ad request/show/reward/result events,
-purchase-funnel events, and impression-level ad revenue. We do not intentionally send your
-name, email address, payment-card details, contacts, photos, or message content to Firebase.</p>
+  <p><strong>(d) Our own in-app promotion (no ad network involved).</strong> When you are
+  online but no network ad is available, the Game plays a video bundled inside the app that
+  promotes our own app <em>Altın Asistanım</em>. This fallback makes no ad request, contacts
+  no ad network, uses no advertising identifier and is never personalised. For a rewarded
+  offer, the reward is granted once the clip has been watched to at least 90%.</p>
 
-<p><strong>(f) Purchases.</strong> Optional in-app purchases are processed by Google Play or
-Apple. We receive transaction status and product information needed to deliver the purchase;
-we do not receive or store your payment-card details.</p>
+  <p><strong>(e) Ad personalisation choice.</strong> The Game no longer uses Google's User
+  Messaging Platform. Instead, immediately before the first real network ad, the Game shows
+  its own dialog asking whether ads may be personalised. Your answer is stored on the device
+  and passed to LevelPlay as a per-network GDPR consent signal (IronSource, Unity Ads, Meta
+  Audience Network, Amazon Publisher Services, Verve and Yandex), as the CCPA
+  "do not sell my personal information" flag, and together with a COPPA declaration that the
+  Game is not directed to children.</p>
 
-<p>The Game does not request access to precise location, contacts, photos, camera, or
-microphone. Google may infer an approximate location from an IP address as part of its
-advertising and analytics services.</p>
+  <p>Declining does not switch ads off — it only switches personalisation off. Until you
+  answer, ads are treated as non-personalised. You can change the choice at any time from
+  <strong>Settings → Privacy</strong> inside the Game; the entry is always available, and
+  changing it discards any ad that was already loaded under the previous choice. On iOS, the
+  system App Tracking Transparency prompt is shown only if you accepted personalisation; if
+  you declined, the prompt is never shown and ads continue without tracking.</p>
 
-<h2>2. How We Use Information</h2>
-<ul>
-  <li>To run the Game, save local progress, and provide requested rewards or purchases.</li>
-  <li>To request and respect advertising consent and privacy choices.</li>
-  <li>To serve, limit, measure, troubleshoot, and prevent abuse of rewarded and interstitial ads.</li>
-  <li>To measure retention, gameplay balance, failed flows, ad performance, and revenue.</li>
-  <li>To improve levels, rewards, advertising frequency, and user acquisition decisions.</li>
-  <li>To schedule a local daily reminder notification if you allow notifications.</li>
-</ul>
+  <p><strong>(f) Firebase Analytics.</strong> The Game uses Google Firebase Analytics to
+  understand retention, level balance, and advertising performance. Analytics data may include
+  an app-instance identifier, device and app information, language, session and screen events,
+  level and mode, attempt number, objective, move and time limits, remaining moves or time,
+  the extra-move compensation given after a loss, board-fill and progress percentages, win,
+  loss and abandonment reasons, booster use, daily-reward day and streak, wheel spins, the ad
+  funnel (offer seen → requested → shown → watched → rewarded, with ad placement and format),
+  purchase-funnel events with product, local price and currency, and impression-level ad
+  revenue reported by LevelPlay in micro-units of currency. We do not intentionally send your
+  name, email address, payment-card details, contacts, photos, or message content to Firebase.
+  On Firebase Test Lab devices — used for the automated pre-launch report — analytics and the
+  ad SDK are switched off automatically.</p>
 
-<h2>3. Advertising Consent and Your Choices</h2>
-<p>Where required, the Game displays a Google UMP message before requesting ads. You can use
-the Game's <strong>Privacy options</strong> entry when it is shown to review available choices.
-You can also use your device's advertising and privacy controls, including controls for the
-advertising identifier and ad personalization. Withdrawing or refusing consent may change the
-types of ads available and, where an ad cannot lawfully be requested, an ad-funded reward may
-not be available.</p>
+  <p><strong>(g) Firebase Crashlytics.</strong> If the Game crashes or hits a fatal error, a
+  crash report is sent so we can fix it. A report contains the stack trace, device model,
+  operating system and app version, and a Crashlytics installation identifier. It does not
+  contain your name, email address, or game content.</p>
 
-<h2>4. Device Permissions</h2>
-<ul>
-  <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> — ads, analytics, consent, and purchases.</li>
-  <li><code>com.google.android.gms.permission.AD_ID</code> — advertising identifier where available and permitted.</li>
-  <li><code>VIBRATE</code> — optional haptic feedback during gameplay.</li>
-  <li><code>POST_NOTIFICATIONS</code> — optional local daily reminder; you may decline or disable it.</li>
-</ul>
+  <p><strong>(h) Purchases.</strong> Optional in-app purchases (three consumable booster
+  packs) are processed by Google Play or Apple. We receive transaction status and product
+  information needed to deliver the purchase; we do not receive or store your payment-card
+  details. Because all three products are consumable and the Game has no player account,
+  spent balances cannot be restored across devices.</p>
 
-<h2>5. Service Providers and Disclosure</h2>
-<p>We do not operate a market for personal information or sell it directly. We disclose data
-to Google, Apple, and advertising technology providers or vendors participating in Google's
-ad services, as needed for the services described in this policy. The advertising providers
-involved may vary by region, consent choice, and Google's configuration; where required, the
-UMP message presents the applicable vendors and purposes. Some privacy laws may define
-personalized advertising disclosures as “sharing”; the consent message and device controls
-described above provide the choices available for your region.</p>
-<ul>
-  <li>Google Privacy Policy — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-  <li>How Google uses data from apps that use its services —
-    <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></li>
-  <li>Google's ad technology providers —
-    <a href="https://support.google.com/admob/answer/9012903">support.google.com/admob/answer/9012903</a></li>
-  <li>Google Analytics for Firebase —
-    <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
-  <li>Apple Privacy Policy — <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
-</ul>
+  <p>The Game does not request access to precise location, contacts, photos, camera, or
+  microphone. Advertising and analytics providers may infer an approximate location from an
+  IP address as part of their services.</p>
 
-<h2>6. Retention and Security</h2>
-<p>Local save data remains on your device until you clear the Game's data or uninstall it.
-Analytics, advertising, consent, and transaction information may be retained by Google,
-Apple, or participating advertising technology providers according to their settings and
-retention policies. We use access controls and limit event fields to what is useful for
-operating and improving the Game, but no electronic processing method is completely secure.</p>
+  <h2>2. How We Use Information</h2>
+  <ul>
+    <li>To run the Game, save local progress, and provide requested rewards or purchases.</li>
+    <li>To record and respect your ad personalisation choice on every ad request.</li>
+    <li>To serve, pace, cap, and measure rewarded and interstitial ads.</li>
+    <li>To protect advertisers and ourselves against invalid traffic — for example by backing
+      off after failed ad requests, throttling repeated error reports, not requesting ads while
+      the app is in the background, capping daily impressions, and inserting a short delay so
+      an ad cannot catch a tap meant for the game.</li>
+    <li>To measure retention, level balance, failed flows, ad performance, and revenue.</li>
+    <li>To diagnose crashes and improve stability.</li>
+    <li>To improve levels, rewards, and advertising frequency.</li>
+    <li>To schedule a local daily reminder notification if you allow notifications.</li>
+  </ul>
 
-<h2>7. Children's Privacy</h2>
-<p>Oblok is a casual puzzle game intended for a general audience and is not directed to
-children under 13 or the minimum digital-consent age in their country. We do not knowingly ask
-children for personal information. If you believe a child has provided personal information,
-please contact us so we can review the issue.</p>
+  <h2>3. Advertising Consent and Your Choices</h2>
+  <p>The Game asks for your ad personalisation choice in its own dialog, shown right before
+  the first real network ad rather than at start-up. You can review or change that choice at
+  any time under <strong>Settings → Privacy</strong>.</p>
+  <p>You can also use your device controls: on Android, <em>Settings → Privacy → Ads</em>
+  lets you reset or delete the advertising ID; on iOS, <em>Settings → Privacy &amp; Security →
+  Tracking</em> controls App Tracking Transparency. Withdrawing consent changes the type of
+  ads you see, not whether the Game works — rewarded offers and their rewards remain available
+  without personalisation.</p>
 
-<h2>8. International Processing</h2>
-<p>Google, Apple, and participating advertising technology providers may process information
-in countries other than the country where you live. Their privacy documentation describes
-the safeguards they apply to international data transfers.</p>
+  <h2>4. Device Permissions</h2>
+  <ul>
+    <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>
+      — ads, analytics, crash reports, and purchases; also used to detect whether you are
+      offline before an ad is offered.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code> — advertising identifier where
+      available and permitted.</li>
+    <li><code>VIBRATE</code> — optional haptic feedback during gameplay.</li>
+    <li><code>POST_NOTIFICATIONS</code> — an optional daily reminder scheduled locally on the
+      device at 19:30; no server is involved and no notification data leaves the device. You
+      may decline or disable it.</li>
+  </ul>
 
-<h2>9. Your Requests</h2>
-<p>You can erase local game data by clearing the app's data or uninstalling it, disable
-notifications in device settings, and review advertising choices as described in section 3.
-For questions or privacy requests, contact us at
-<a href="mailto:destek@drksistem.com">destek@drksistem.com</a>. Because the Game has no player
-account, please do not send sensitive identifiers unless support specifically requires them.</p>
+  <h2>5. Service Providers and Disclosure</h2>
+  <p>We do not operate a market for personal information and we do not sell it. We disclose
+  data to the providers below as needed for the services described in this policy. Which ad
+  networks take part in a given ad request varies by region, by your personalisation choice,
+  and by the LevelPlay configuration in force at the time. Some privacy laws describe
+  personalised advertising as "sharing" or "selling"; the choice described in section 3 is the
+  control available to you.</p>
 
-<h2>10. Changes to This Policy</h2>
-<p>We may update this Privacy Policy when the Game, service providers, or legal requirements
-change. The “Last updated” date above identifies the latest revision.</p>
+  <h3>Advertising</h3>
+  <div class="tablo-sar">
+    <table>
+      <tr><th>Provider</th><th>Role</th><th>Privacy information</th></tr>
+      <tr>
+        <td>Unity Technologies — LevelPlay / ironSource</td>
+        <td>Ad mediation platform and demand source</td>
+        <td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal</a></td>
+      </tr>
+      <tr>
+        <td>Unity Ads</td>
+        <td>Ad network</td>
+        <td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal</a></td>
+      </tr>
+      <tr>
+        <td>Meta Audience Network</td>
+        <td>Ad network</td>
+        <td><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a></td>
+      </tr>
+      <tr>
+        <td>Verve Group (HyBid)</td>
+        <td>Ad network</td>
+        <td><a href="https://verve.com/privacy-policy/" target="_blank" rel="noopener">verve.com/privacy-policy</a></td>
+      </tr>
+      <tr>
+        <td>Yandex Ads</td>
+        <td>Ad network</td>
+        <td><a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener">yandex.com/legal/confidential</a></td>
+      </tr>
+      <tr>
+        <td>Amazon Publisher Services</td>
+        <td>Ad network — integrated, not yet serving ads in the Game</td>
+        <td><a href="https://advertising.amazon.com/legal/privacy-notice" target="_blank" rel="noopener">advertising.amazon.com/legal</a></td>
+      </tr>
+    </table>
+  </div>
 
-<h2>11. Contact</h2>
-<p>DRK STUDIO · <a href="mailto:destek@drksistem.com">destek@drksistem.com</a></p>
+  <h3>Measurement, distribution and payments</h3>
+  <ul>
+    <li>Google Analytics for Firebase and Firebase Crashlytics —
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+    <li>Google (Google Play, advertising identifier) —
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    <li>Apple (App Store, App Tracking Transparency) —
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
+  </ul>
 
-<footer>© 2026 DRK STUDIO. Oblok and the Oblok logo are trademarks of DRK STUDIO.</footer>
+  <h2>6. Retention and Security</h2>
+  <p>Local save data remains on your device until you clear the Game's data or uninstall it.
+  Analytics, crash, advertising, consent, and transaction information may be retained by the
+  providers listed in section 5 according to their own settings and retention policies. We
+  limit event fields to what is useful for operating and improving the Game, but no electronic
+  processing method is completely secure.</p>
+
+  <h2>7. Children's Privacy</h2>
+  <p>Oblok is a casual puzzle game intended for a general audience and is not directed to
+  children under 13 or the minimum digital-consent age in their country. The Game declares
+  itself as not directed to children to the mediation platform, so child-directed treatment is
+  not requested on its behalf. We do not knowingly ask children for personal information. If
+  you believe a child has provided personal information, please contact us so we can review
+  the issue.</p>
+
+  <h2>8. International Processing</h2>
+  <p>The providers listed in section 5 may process information in countries other than the
+  country where you live. Their privacy documentation describes the safeguards they apply to
+  international data transfers.</p>
+
+  <h2>9. Your Requests</h2>
+  <p>You can erase local game data by clearing the app's data or uninstalling it, disable
+  notifications in device settings, change ad personalisation under Settings → Privacy, and
+  reset or delete your advertising identifier with your device controls. For questions or
+  privacy requests, contact us at
+  <a href="mailto:destek@drksistem.com">destek@drksistem.com</a>. Because the Game has no
+  player account, we cannot link a request to a specific player profile; please do not send
+  sensitive identifiers unless support specifically requires them.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy when the Game, its service providers, or legal
+  requirements change. The "Last updated" date above identifies the latest revision.</p>
+
+  <h2>11. Contact</h2>
+  <p>DRK STUDIO · <a href="mailto:destek@drksistem.com">destek@drksistem.com</a></p>
+<footer>© 2026 DRK STUDIO. Oblok and the Oblok logo are trademarks of DRK STUDIO.
+<a href="./">Support</a> · Canonical copy: <a href="https://drksistem.com/oblok/gizlilik">drksistem.com/oblok/gizlilik</a></footer>
 
 </body>
 </html>
