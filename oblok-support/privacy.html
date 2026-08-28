@@ -66,7 +66,14 @@
     for consent through <strong>Google's User Messaging Platform (UMP)</strong>. Both have been
     removed. The <code>google_mobile_ads</code> component is no longer part of the Game.
     Advertising now runs on Unity LevelPlay mediation, and the personalisation choice is
-    collected by an in-game dialog described in section 1(e).</p>
+    collected by an in-game dialog described in section 1(d).</p>
+    <p>An earlier build also played a short video bundled inside the app promoting our own
+    app <em>Altın Asistanım</em> whenever no network ad was available. That in-app promotion
+    has been <strong>removed entirely</strong>: the video file is no longer shipped with the
+    Game, and no promotional clip is shown in any situation. When no network ad is available,
+    the offer simply closes and no reward is granted.</p>
+    <p>While you are offline the Game does not request or show ads at all. Only Zen mode can
+    be played offline, and no boosters can be earned from ads in that state.</p>
   </div>
 
   <h2>1. Information We Handle</h2>
@@ -80,7 +87,7 @@
   personalisation choice, and advertising frequency counters in on-device storage. This local
   save data is not uploaded as a save file and is removed if you clear the Game's data or
   uninstall it. Some limited gameplay values are also included in analytics events as
-  explained in section 1(f).</p>
+  explained in section 1(e).</p>
 
   <p><strong>(c) Advertising through Unity LevelPlay.</strong> The Game uses
   <strong>Unity LevelPlay (ironSource)</strong> as its ad mediation platform. Two ad formats
@@ -97,13 +104,7 @@
   version, language and country, ad requests, impressions, interactions, viewability and
   diagnostic signals, and impression-level revenue data.</p>
 
-  <p><strong>(d) Our own in-app promotion (no ad network involved).</strong> When you are
-  online but no network ad is available, the Game plays a video bundled inside the app that
-  promotes our own app <em>Altın Asistanım</em>. This fallback makes no ad request, contacts
-  no ad network, uses no advertising identifier and is never personalised. For a rewarded
-  offer, the reward is granted once the clip has been watched to at least 90%.</p>
-
-  <p><strong>(e) Ad personalisation choice.</strong> The Game no longer uses Google's User
+  <p><strong>(d) Ad personalisation choice.</strong> The Game no longer uses Google's User
   Messaging Platform. Instead, immediately before the first real network ad, the Game shows
   its own dialog asking whether ads may be personalised. Your answer is stored on the device
   and passed to LevelPlay as a per-network GDPR consent signal (IronSource, Unity Ads, Meta
@@ -118,7 +119,7 @@
   system App Tracking Transparency prompt is shown only if you accepted personalisation; if
   you declined, the prompt is never shown and ads continue without tracking.</p>
 
-  <p><strong>(f) Firebase Analytics.</strong> The Game uses Google Firebase Analytics to
+  <p><strong>(e) Firebase Analytics.</strong> The Game uses Google Firebase Analytics to
   understand retention, level balance, and advertising performance. Analytics data may include
   an app-instance identifier, device and app information, language, session and screen events,
   level and mode, attempt number, objective, move and time limits, remaining moves or time,
@@ -131,12 +132,12 @@
   On Firebase Test Lab devices — used for the automated pre-launch report — analytics and the
   ad SDK are switched off automatically.</p>
 
-  <p><strong>(g) Firebase Crashlytics.</strong> If the Game crashes or hits a fatal error, a
+  <p><strong>(f) Firebase Crashlytics.</strong> If the Game crashes or hits a fatal error, a
   crash report is sent so we can fix it. A report contains the stack trace, device model,
   operating system and app version, and a Crashlytics installation identifier. It does not
   contain your name, email address, or game content.</p>
 
-  <p><strong>(h) Purchases.</strong> Optional in-app purchases (three consumable booster
+  <p><strong>(g) Purchases.</strong> Optional in-app purchases (three consumable booster
   packs) are processed by Google Play or Apple. We receive transaction status and product
   information needed to deliver the purchase; we do not receive or store your payment-card
   details. Because all three products are consumable and the Game has no player account,
